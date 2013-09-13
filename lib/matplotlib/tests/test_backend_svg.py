@@ -40,7 +40,7 @@ def test_visibility():
 def test_fill_black_with_alpha():
     fig = plt.figure()
     ax = fig.add_subplot(1, 1, 1)
-    ax.scatter(x=[0, 0.1, 1], y=[0, 0, 0], c='k', alpha='0.1', s=10000)
+    ax.scatter(x=[0, 0.1, 1], y=[0, 0, 0], c='k', alpha=0.1, s=10000)
 
 
 @image_comparison(baseline_images=['noscale'], remove_text=True)
