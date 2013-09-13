@@ -35,7 +35,7 @@ def test_visibility():
     parser.Parse(buf)  # this will raise ExpatError if the svg is invalid
 
 
-@image_comparison(baseline_images=['fill_black_with_alpha'],
+@image_comparison(baseline_images=['fill_black_with_alpha'], remove_text=True,
                   extensions=['svg'])
 def test_fill_black_with_alpha():
     fig = plt.figure()
